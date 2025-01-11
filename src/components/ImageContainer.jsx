@@ -16,7 +16,7 @@ const ImageContainer = () => {
             {/* Main Image Container */}
             <div className="relative w-[70%] max-[500px]:w-full">
                 <img
-                    src={`src/assets/image-product-${imageToDisplay}.jpg`}
+                    src={`/assets/image-product-${imageToDisplay}.jpg`}
                     alt="product-image"
                     className="w-full rounded-2xl"
                 />
@@ -41,7 +41,7 @@ const ImageContainer = () => {
                 {[1, 2, 3, 4].map((img, index) => (
                     <img
                         key={index}
-                        src={`src/assets/image-product-${img}-thumbnail.jpg`}
+                        src={`/assets/image-product-${img}-thumbnail.jpg`}
                         alt={`thumbnail-${img}`}
                         className={`w-[15%] rounded-lg cursor-pointer transition-all
                             ${imageToDisplay === img

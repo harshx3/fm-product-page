@@ -22,7 +22,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="flex-1 sm:flex-none flex justify-center sm:justify-start mr-4">
                     <NavLink to={"/"}>
-                        <img src="/src/assets/logo.svg" alt="logo" className="h-8" />
+                        <img src="/assets/logo.svg" alt="logo" className="h-8" />
                     </NavLink>
                 </div>
 
@@ -40,14 +40,14 @@ const Navbar = () => {
                     <NavLink to={`${parentPath}/cart`}>
                         <img
                             onClick={() => addToCart()}
-                            src="/src/assets/icon-cart.svg"
+                            src="/assets/icon-cart.svg"
                             alt="cart"
                             className="w-6 h-6"
                         />
                     </NavLink>
                     <NavLink>
                         <img
-                            src="/src/assets/image-avatar.png"
+                            src="/assets/image-avatar.png"
                             alt="profile"
                             className="w-10 h-10"
                         />
