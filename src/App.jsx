@@ -8,6 +8,7 @@ import Contact from "./pages/Contact"
 import Men from "./pages/Men"
 import Women from "./pages/Women"
 import Collections from "./pages/Collections"
+import Cart from "./pages/Cart"
 
 function App() {
 
@@ -66,7 +67,24 @@ function App() {
         </>
       )
     },
-
+    {
+      path: "/cart",
+      element: (
+        <>
+          <Navbar />
+          <Cart />
+        </>
+      )
+    },
+    {
+      path: "/:parent/cart",
+      element: (
+        <>
+          <Navbar />
+          <Cart />
+        </>
+      )
+    }
   ]);
 
   return (
